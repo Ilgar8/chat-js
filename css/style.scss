@@ -1,0 +1,179 @@
+#mini-chat {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+
+    i {
+        position: fixed;
+        font-size: 40px;
+        color: white;
+        background-color: black;
+        padding: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        animation-name: ilgar;
+        animation-duration: 5s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+
+    }
+
+    @keyframes ilgar {
+        0% {
+            background-color: black;
+            left: 0;
+            top: 0;
+        }
+
+        25% {
+            color: white;
+            left: 20px;
+            top: 0;
+        }
+
+        50% {
+            background-color: black;
+            left: 20px;
+            top: 20px;
+        }
+
+        75% {
+            color: white;
+            left: 0;
+            top: 20px;
+        }
+
+        100% {
+            background-color: black;
+            left: 0;
+            top: 0;
+        }
+
+    }
+}
+
+
+
+#chat {
+    width: 350px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    outline: 10px solid black;
+    border-top-right-radius: 8mm;
+    border-top-left-radius: 8mm;
+    border-bottom-right-radius: 8mm;
+    transition: 0.5s ease-in-out 0.5s;
+    z-index: 10;
+
+
+    &:hover {
+        outline: 3px solid red;
+    }
+
+
+
+    span {
+        font-size: 25px;
+        color: black;
+    }
+
+    .close-chat {
+        position: absolute;
+        right: 15px;
+
+        i {
+            font-size: 25px;
+            color: black;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    .bars {
+        position: absolute;
+        right: 40px;
+
+        i {
+            font-size: 25px;
+            color: black;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    .text-center {
+
+        p {
+            transition: 0.5s ease-in-out;
+            color: black;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    header {
+        padding: 15px 25px;
+        background-color: white;
+        border-top-left-radius: 8mm;
+        border-top-right-radius: 8mm;
+
+    }
+
+    main {
+        height: 350px;
+        overflow-y: scroll;
+        background-image: url(https://besthqwallpapers.com/Uploads/5-4-2021/161481/besiktas-turkish-professional-basketball-club-silver-logo-gray-carbon-fiber-background-turkish-league.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .message {
+            padding: 15px;
+            margin: 20px 10px;
+            border-radius: 10px;
+            position: relative;
+            min-width: 51%;
+            max-width: 70%;
+
+            .time {
+                position: absolute;
+                top: 100%;
+                right: 15px;
+                color: rgb(244, 231, 231);
+                font-weight: 500;
+            }
+
+            &.support {
+                float: left;
+                background-color: black;
+                color: white;
+            }
+
+            &.user {
+                float: right;
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    footer {
+        input {
+            border-bottom-right-radius: 8mm;
+            outline: 2 px solid blue;
+        }
+    }
+}

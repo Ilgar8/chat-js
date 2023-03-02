@@ -1,0 +1,142 @@
+#mini-chat {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+#mini-chat i {
+  position: fixed;
+  font-size: 40px;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  animation-name: ilgar;
+  animation-duration: 5s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes ilgar {
+  0% {
+    background-color: black;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    color: white;
+    left: 20px;
+    top: 0;
+  }
+  50% {
+    background-color: black;
+    left: 20px;
+    top: 20px;
+  }
+  75% {
+    color: white;
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    background-color: black;
+    left: 0;
+    top: 0;
+  }
+}
+
+#chat {
+  width: 350px;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  outline: 10px solid black;
+  border-top-right-radius: 8mm;
+  border-top-left-radius: 8mm;
+  border-bottom-right-radius: 8mm;
+  transition: 0.5s ease-in-out 0.5s;
+  z-index: 10;
+}
+#chat:hover {
+  outline: 3px solid red;
+}
+#chat span {
+  font-size: 25px;
+  color: black;
+}
+#chat .close-chat {
+  position: absolute;
+  right: 15px;
+}
+#chat .close-chat i {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+#chat .close-chat i:hover {
+  color: red;
+}
+#chat .bars {
+  position: absolute;
+  right: 40px;
+}
+#chat .bars i {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+#chat .bars i:hover {
+  color: red;
+}
+#chat .text-center p {
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+#chat .text-center p:hover {
+  color: red;
+}
+#chat header {
+  padding: 15px 25px;
+  background-color: white;
+  border-top-left-radius: 8mm;
+  border-top-right-radius: 8mm;
+}
+#chat main {
+  height: 350px;
+  overflow-y: scroll;
+  background-image: url(https://besthqwallpapers.com/Uploads/5-4-2021/161481/besiktas-turkish-professional-basketball-club-silver-logo-gray-carbon-fiber-background-turkish-league.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#chat main .message {
+  padding: 15px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  position: relative;
+  min-width: 51%;
+  max-width: 70%;
+}
+#chat main .message .time {
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  color: rgb(244, 231, 231);
+  font-weight: 500;
+}
+#chat main .message.support {
+  float: left;
+  background-color: black;
+  color: white;
+}
+#chat main .message.user {
+  float: right;
+  background-color: white;
+  color: black;
+}
+#chat footer input {
+  border-bottom-right-radius: 8mm;
+  outline: 2 px solid blue;
+}/*# sourceMappingURL=style.css.map */
